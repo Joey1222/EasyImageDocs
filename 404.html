@@ -11,9 +11,11 @@
     <h1>404 Page Not Found!</h1>
     <p>Sorry but we could not find this page.</p><br/>
     <button class="btn btn-primary" onclick="document.getElementById('a').click()">Click to go home</button>
-    <a href="" id="a" hidden></a>
+    <a href="" id="a" webname="EasyImageDocs" hidden></a>
     <script>
-        const webname = "EasyImageDocs"
-        const a = document.getElementById('a');a.setAttribute('href', `/${webname}`)</script>
+        const a = document.getElementById('a');
+        const webname = a.getAttributeNode('webname');
+        a.setAttribute('href', `/${webname}`);
+    </script>
 </body>
 </html>
