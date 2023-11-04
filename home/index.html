@@ -12,28 +12,21 @@
 <body>
     <header>
         <header>
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs" id="navId" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <a href="./home" class="nav-link link-primary" data-bs-toggle="tab">Home</a>
-                </li>
-            </ul>
-            
-            <!-- Tab panes -->
-            <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
-                <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
-                <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
-                <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
-                <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
-            </div>
-            
-            <!-- (Optional) - Place this js code after initializing bootstrap.min.js or bootstrap.bundle.min.js -->
-            <script>
-                var triggerEl = document.querySelector('#navId a')
-                bootstrap.Tab.getInstance(triggerEl).show() // Select tab by name
-            </script>
-            
+            <nav class="navbar navbar-expand-lg bg-light">
+                    <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./home">Home</a>
+                        </li>
+                        </ul>
+                        </div>
+                    </div>
+                </nav>
         </header>
         <main>
         
