@@ -14,8 +14,8 @@
     <a href="" id="a" webname="EasyImageDocs" homepage="home" hidden></a>
     <script>
         const a = document.getElementById('a');
-        const webname = a.getAttributeNode('webname');
-        const homepage = a.getAttributeNode('homepage');
+        const webname = a.getAttribute('webname');
+        const homepage = a.getAttribute('homepage');
         a.setAttribute('href', `/${webname}/${homepage}`);
     </script>
 </body>
